@@ -5,25 +5,23 @@ on:
 
 name: Quarto Publish
 jobs:
-  build-conda:
+  build-deploy:
     name: Conda Build with mamba
     runs-on: "ubuntu-latest"
     defaults:
       run:
         shell: bash -l {0}
+
     steps:
       - name: build 
-       uses: actions/checkout@v2
-       uses: conda-incubator/setup-miniconda@v2
+        uses: actions/checkout@v2
+        uses: conda-incubator/setup-miniconda@v2
         with:
           activate-environment: anaconda-client-env
           environment-file: example-environment.yml
           python-version: 3.10.4
           mamba-version: "*"
           channels: conda-forge,defaults
-      - run: |
-          conda info
-          conda list
 
       - name: Check out repository
         uses: actions/checkout@v2
