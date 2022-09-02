@@ -1,0 +1,10 @@
+{
+  "hash": "af50c36ed7afbe005b68dd604bc46d37",
+  "result": {
+    "markdown": "# Introduction\n\nThis is a book created from markdown and executable code.\n\nSee @knuth84 for additional discussion of literate programming.\n\n::: {.cell execution_count=1}\n``` {.python .cell-code}\nprint(\"this is some new text\")\n```\n\n::: {.cell-output .cell-output-stdout}\n```\nthis is some new text\n```\n:::\n:::\n\n\n",
+    "supporting": [
+      "intro_files/figure-pdf"
+    ],
+    "filters": []
+  }
+}
