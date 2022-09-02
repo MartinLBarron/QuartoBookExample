@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "QuartoBookExample",
     "section": "",
-    "text": "This is a Quarto book.\nTo learn more about Quarto books visit https://quarto.org/docs/books."
+    "text": "This is a Quarto book.\nTo learn more about Quarto books visit https://quarto.org/docs/books.\nThis is some python.\n\n1+1\n\n2"
   },
   {
     "objectID": "intro.html",
