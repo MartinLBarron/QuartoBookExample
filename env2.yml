@@ -1,7 +1,0 @@
-name: CRbook
-channels:
-  - defaults
-dependencies:
-  - python=3.10
-  - jupyter
-prefix: /Users/barronm/opt/miniconda3/envs/CRbook
