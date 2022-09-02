@@ -26,7 +26,8 @@ jobs:
           python-version: 3.10.4
           environment-file: environment.yml
           channels: defaults
-          
+          activate-environment: CRbook
+
 
       - name: Render and Publish
         uses: quarto-dev/quarto-actions/publish@v2
