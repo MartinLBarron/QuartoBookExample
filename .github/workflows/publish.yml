@@ -30,6 +30,7 @@ jobs:
             conda list
             conda env list
             $CONDA/bin/conda env list
+            echo "TKTK"
 
 
       - name: Render and Publish
