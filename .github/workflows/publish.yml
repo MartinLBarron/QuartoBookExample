@@ -19,7 +19,7 @@ jobs:
           auto-activate-base: true
           activate-environment: ""
           #environment-file: example-environment.yml
-          python-version: 3.10.4
+          python-version: 3.9
           mamba-version: "*"
           channels: conda-forge,defaults
           run: |
