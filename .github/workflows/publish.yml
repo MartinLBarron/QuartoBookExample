@@ -17,6 +17,7 @@ jobs:
         with:
           tinytex: true
 
+
       - name: setup conda
         uses: conda-incubator/setup-miniconda@v2
         with:
@@ -24,8 +25,10 @@ jobs:
           environment-file: example-environment.yml
           python-version: 3.10.4
           channels: defaults, conda-forge
+      - name: run stuff
           run: |
             $CONDA/bin/conda env update --file environment.yml --name base
+            conda env update --file environment.yml --name base
             conda info
             conda list
             conda env list
