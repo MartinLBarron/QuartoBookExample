@@ -12,10 +12,10 @@ jobs:
         shell: bash -l {0}
 
     steps:
-    - uses: actions/checkout@v2
-    - uses: quarto-dev/quarto-actions/setup@v2
-      with:
-        tinytex: true
+      - uses: actions/checkout@v2
+      - uses: quarto-dev/quarto-actions/setup@v2
+        with:
+          tinytex: true
 
       - name: setup conda
         uses: conda-incubator/setup-miniconda@v2
