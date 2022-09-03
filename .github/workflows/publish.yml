@@ -25,8 +25,9 @@ jobs:
           environment-file: example-environment.yml
           python-version: 3.10.4
           channels: defaults, conda-forge
+          
       - name: run stuff
-          run: |
+        run: |
             $CONDA/bin/conda env update --file environment.yml --name base
             conda env update --file environment.yml --name base
             conda info
