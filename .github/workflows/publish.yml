@@ -28,7 +28,7 @@ jobs:
           environment-file: example-environment.yml
           python-version: 3.10.4
           mamba-version: "*"
-          channels: defaults
+          channels: defaults, conda-forge
 
       - name: Render and Publish
         uses: quarto-dev/quarto-actions/publish@v2
