@@ -1,23 +1,22 @@
+name: Quarto Publish
 on:
   workflow_dispatch:
   push:
     branches: main
 
-name: Quarto Publish
 jobs:
-  build-deploy:
-    name: Conda Build with mamba
+  build-linux:
     runs-on: "ubuntu-latest"
     defaults:
       run:
         shell: bash -l {0}
 
     steps:
-      - name: checkout
-        uses: actions/checkout@v2
+    - name: checkout
+    - uses: actions/checkout@v2
 
-      - name: Set up Quarto
-        uses: quarto-dev/quarto-actions/setup@v2
+    - name: Set up Quarto
+      uses: quarto-dev/quarto-actions/setup@v2
         with:
           tinytex: true
 
@@ -27,7 +26,6 @@ jobs:
           activate-environment: anaconda-client-env
           environment-file: example-environment.yml
           python-version: 3.10.4
-          mamba-version: "*"
           channels: defaults, conda-forge
 
       - name: Render and Publish
