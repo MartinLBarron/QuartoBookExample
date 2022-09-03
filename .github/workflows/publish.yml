@@ -24,6 +24,13 @@ jobs:
           environment-file: example-environment.yml
           python-version: 3.10.4
           channels: defaults, conda-forge
+          run: |
+          $CONDA/bin/conda env update --file environment.yml --name base
+          conda info
+          conda list
+          conda env list
+          $CONDA/bin/conda env list
+
 
       - name: Render and Publish
         uses: quarto-dev/quarto-actions/publish@v2
