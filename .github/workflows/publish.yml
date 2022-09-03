@@ -17,9 +17,9 @@ jobs:
       - uses: conda-incubator/setup-miniconda@v2
         with:
           auto-activate-base: true
-          activate-environment: ""
+          activate-environment: true
           #environment-file: example-environment.yml
-          python-version: 3.9
+          python-version: 3.10.4
           mamba-version: "*"
           channels: conda-forge,defaults
           run: |
