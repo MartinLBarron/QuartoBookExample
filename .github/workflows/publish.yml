@@ -25,6 +25,7 @@ jobs:
           run: |
             # $CONDA is an environment variable pointing to the root of the miniconda directory
             $CONDA/bin/conda env update --file example-environment.yml --name base
+            conda list
 
       - name: Check out repository
         uses: actions/checkout@v2
